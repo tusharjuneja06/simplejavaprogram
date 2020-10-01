@@ -15,7 +15,7 @@ class PrimeCheck{
     }
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
+        System.out.println("Enter an integer: ");
         int n = scan.nextInt();
         scan.close();
         if(isPrime(n))

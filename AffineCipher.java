@@ -12,12 +12,12 @@ class AffineCipher {
         if (choice == 1) {
             String pt = br1.readLine();
 
-            System.out.print("Enter the value of a in Encryption formula (must be coprime to 26): ");
+            System.out.println("Enter the value of a in Encryption formula (must be coprime to 26): ");
             int a = Integer.parseInt(br.readLine());
             if (!isCoprime(a, 26)) {
                 System.out.println("!!Enter a value CoPrime to 26!!\nRun Again with proper value of A");
             } else {
-                System.out.print("Enter the value of b in Encryption formula: ");
+                System.out.println("Enter the value of b in Encryption formula: ");
                 int b = Integer.parseInt(br.readLine());
 
                 or.write("Encrypted Ciphertext is: " + encryptMessage(pt.toCharArray(), a, b));
@@ -25,12 +25,12 @@ class AffineCipher {
             }
         } else {
             String pt = br1.readLine();
-            System.out.print("Enter the value of a in Encryption formula (must be coprime to 26): ");
+            System.out.println("Enter the value of a in Encryption formula (must be coprime to 26): ");
             int a = Integer.parseInt(br.readLine());
             if (!isCoprime(a, 26)) {
                 System.out.println("!!Enter a value CoPrime to 26!!\nRun Again with proper value of A");
             } else {
-                System.out.print("Enter the value of b in Encryption formula: ");
+                System.out.println("Enter the value of b in Encryption formula: ");
                 int b = Integer.parseInt(br.readLine());
 
                 or.write("Decrypted Plaintext is: " + decryptCipher(pt, a, b));
