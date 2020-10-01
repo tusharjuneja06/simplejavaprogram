@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class StringReverse {
     public static void main(String[] args) {
-        System.out.print("Enter a string : ");
+        System.out.println("Enter a string : ");
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine(), r="";
         scan.close();
