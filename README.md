@@ -1,2 +1,3 @@
 # simplejavaprogram
-add ur java programs as a contribution to hacktoberfest 2020
+
+Add your java programs as a contribution to hacktoberfest 2020
