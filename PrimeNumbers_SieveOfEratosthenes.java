@@ -18,7 +18,6 @@ public class Main {
 public class SieveOfEratosthenes {
 
     private final List<Number> numbers;
-    private final List<Integer> primeNumbers;
 
     public SieveOfEratosthenes(int n) {
         if (n < 2) {
@@ -28,8 +27,6 @@ public class SieveOfEratosthenes {
         numbers = new ArrayList<>(n - 1);
         for (var i = 2; i <= n; i++)
             numbers.add(new Number(i));
-
-        primeNumbers = new ArrayList<>();
     }
 
     public void CalculatePrimeNumbers() {
@@ -38,10 +35,9 @@ public class SieveOfEratosthenes {
                 continue;
 
             var number = numbers.get(i).getNumber();
-            primeNumbers.add(number);
 
             for (var n : numbers) {
-                if (n.isChecked())
+                if (n.getNumber() == number || n.isChecked())
                     continue;
 
                 if (n.getNumber() % number == 0)
@@ -49,8 +45,9 @@ public class SieveOfEratosthenes {
             }
         }
 
-        for (var primeNumber : primeNumbers) {
-            System.out.println(primeNumber);
+        for (var primeNumber : numbers) {
+            if (!primeNumber.isChecked())
+                System.out.println(primeNumber.getNumber());
         }
     }
 
