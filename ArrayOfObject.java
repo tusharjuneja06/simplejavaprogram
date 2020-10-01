@@ -1,6 +1,5 @@
 class Hello 
 { 
-    public int roll_no; 
     void display()
     {
     	System.out.println("Hello World");
