@@ -9,7 +9,7 @@ public class IsOddOrEven {
         }
         public static void main(String[] args){
             Scanner scan = new Scanner(System.in);
-            System.out.print("Enter a number: ");
+            System.out.println("Enter a number: ");
             int n = scan.nextInt();
             scan.close();
             if(isOddOrEven(n))
