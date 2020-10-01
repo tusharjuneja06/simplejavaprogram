@@ -16,8 +16,8 @@ public class CopyFile {
 
         try {
             // Create Input and Output streams
-            inputStream = new FileInputStream("C:\\Users\\prakh\\git\\workspace\\Workspace\\workspace\\angular.json");
-            outputStream = new FileOutputStream("C:\\Users\\prakh\\git\\workspace\\Workspace\\workspace\\angular_output.json");
+            inputStream = new FileInputStream(inputFileLocation);
+            outputStream = new FileOutputStream(outputFileLocation);
 
             // Read the data from Input file in bytes and write each byte to output file
             int dataByte;
