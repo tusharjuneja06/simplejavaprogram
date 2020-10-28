@@ -1,0 +1,22 @@
+import java.util.*;
+public class countVowel {
+
+    public static void main(String[] args) {
+          Scanner key= new Scanner(System.in);
+          String s= key.nextLine();
+          char [] cArray=s.toCharArray();
+          int vowelCount=0;
+          for (int i=0;i<cArray.length;i++){
+          if(cArray[i]=='A'||cArray[i]=='E'||
+         cArray[i]=='I'||cArray[i]=='O'||cArray[i]=='U'){
+          vowelCount++;
+          }
+          if(cArray[i]=='a'||cArray[i]=='e'||
+         cArray[i]=='i'||cArray[i]=='o'||cArray[i]=='u'){
+          vowelCount++;
+          }
+          }
+          System.out.println("Number of vowels: "+vowelCount);
+    }
+    
+}
