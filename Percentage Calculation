@@ -1,0 +1,35 @@
+import java.util.*;
+public class Percentage 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the marks of 5 subjects out of 100:");
+		float a=sc.nextFloat();
+		float b=sc.nextFloat();
+		float c=sc.nextFloat();
+		float d =sc.nextFloat();
+		float e=sc.nextFloat();
+		float percentage=((a+b+c+d+e)/500)*100;
+		System.out.println("percentage:"+percentage);
+		if(percentage<100 && percentage>80)
+		{
+			System.out.println("grade is A");
+		}
+		else if(percentage>60 && percentage<79)
+		{
+			System.out.println("grade is B");
+		}
+		else if(percentage>44 && percentage<59)
+		{
+			System.out.println("grade is C");
+		}
+		else
+		{
+			System.out.println("grade is D");
+		}
+
+	}
+
+}
